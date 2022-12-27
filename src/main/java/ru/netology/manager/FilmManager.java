@@ -5,11 +5,11 @@ public class FilmManager {
     private FilmItem[] items = new FilmItem[0];
     private int limit;
 
-    public FilmManager () {
-        this.limit = 10;
+    public FilmManager() {
+        this.limit = 5;
     }
 
-    public FilmManager (int limit) {
+    public FilmManager(int limit) {
         this.limit = limit;
     }
 
@@ -27,20 +27,20 @@ public class FilmManager {
         return items;
     }
 
-    public FilmItem [] lastFilm () {
+    public FilmItem[] lastFilm() {
         int maxlenght;
-        if (items.length <limit) {
+        if (items.length < limit) {
             maxlenght = items.length;
-        }else {
+        } else {
             maxlenght = limit;
         }
         FilmItem[] tmp = new FilmItem[maxlenght];
         for (int i = 0; i < items.length; i++) {
-            tmp[i] = items[items.length-1-i];
+            tmp[i] = items[items.length - 1 - i];
         }
 
         return tmp;
     }
 
-    
+
 }
