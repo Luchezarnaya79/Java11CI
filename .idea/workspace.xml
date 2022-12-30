@@ -41,6 +41,7 @@
 }</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clean" />
       <command value="mvn test" />
     </option>
   </component>
@@ -128,10 +129,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ManagerTest.LastFilmsMaxMax" />
+        <item itemvalue="JUnit.ManagerTest.addManager" />
         <item itemvalue="JUnit.ManagerTest.LastFilmsMin" />
         <item itemvalue="JUnit.ManagerTest.LastFilmsMax" />
         <item itemvalue="JUnit.ManagerTest.LastFilms" />
-        <item itemvalue="JUnit.ManagerTest.addManager" />
       </list>
     </recent_temporary>
   </component>
@@ -145,25 +146,5 @@
       <updated>1671112925420</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/netology/manager/ManagerTest.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/netology/manager/FilmManager.java</url>
-          <line>29</line>
-          <properties class="ru.netology.manager.FilmManager" method="lastFilm">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

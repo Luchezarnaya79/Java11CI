@@ -16,11 +16,16 @@ public class FilmManager {
 
     public void add(FilmItem item) {
         FilmItem[] tmp = new FilmItem[items.length + 1];
-        for (int i = 0; i < items.length; i++) {
-            tmp[i] = items[i];
-        }
-        tmp[tmp.length - 1] = item;
-        items = tmp;
+        //  for (int i = 0; i < items.length; i++) {
+        //    tmp[i] = items[i];
+        //  }
+        // tmp[tmp.length - 1] = item;
+        //items = tmp;
+
+        System.arraycopy(items,0,tmp,0,items.length);
+        int lastIndex=tmp.length-1;
+        tmp[lastIndex]=item;
+        items=tmp;
     }
 
     public FilmItem[] findAll() {
@@ -35,7 +40,7 @@ public class FilmManager {
             maxlenght = limit;
         }
         FilmItem[] tmp = new FilmItem[maxlenght];
-        for (int i = 0; i < items.length; i++) {
+        for (int i = 0; i < tmp.length; i++) {
             tmp[i] = items[items.length - 1 - i];
         }
 

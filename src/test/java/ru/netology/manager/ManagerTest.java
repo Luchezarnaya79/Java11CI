@@ -61,21 +61,21 @@ public class ManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-    //@Test
-    // public void LastFilmsMaxMax() {
-    //    FilmManager repo = new FilmManager();
+    @Test
+    public void LastFilmsMaxMax() {
+        FilmManager repo = new FilmManager();
 
-    // repo.add(film1);
-    // repo.add(film2);
-    // repo.add(film3);
-    //  repo.add(film4);
-    //  repo.add(film5);
-    // repo.add(film6);
+        repo.add(film1);
+        repo.add(film2);
+        repo.add(film3);
+        repo.add(film4);
+        repo.add(film5);
+        repo.add(film6);
 
 
-    //  FilmItem[] expected = {film6, film5, film4, film3, film2};
-    //  FilmItem[] actual = repo.lastFilm();
+        FilmItem[] expected = {film6, film5, film4, film3, film2};
+        FilmItem[] actual = repo.lastFilm();
 
-    //  Assertions.assertArrayEquals(expected, actual);
-    // }
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }
